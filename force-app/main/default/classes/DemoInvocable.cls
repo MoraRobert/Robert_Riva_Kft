@@ -3,7 +3,7 @@ public with sharing class DemoInvocable {
     @InvocableMethod(Label='Demo Invocable Method')
     public static void demoInvocableMethod(List<FlowInput> flowInputs){
 
-        if(!flowInputs.isEmpty()){
+        if(!flowInputs.isEmpty()){ //6
                 FlowInput input = flowInputs[0];
                 String integrationPoint = input.integrationPoint;
                 if(integrationPoint == 'Salesforce'){
