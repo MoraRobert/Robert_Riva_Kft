@@ -1,0 +1,17 @@
+<!--
+ - Created by Robi on 23/05/2024.
+ -->
+
+ <template>
+    <lightning-card title="Work Orders" icon-name="standard:work_order">
+        <template if:true={workOrders.data}>
+            <lightning-datatable
+                key-field="id"
+                data={workOrders.data}
+                columns={columns}
+                hide-checkbox-column>
+            </lightning-datatable>
+        </template>
+      
+    </lightning-card>
+</template>
